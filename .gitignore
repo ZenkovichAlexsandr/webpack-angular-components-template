@@ -1,0 +1,28 @@
+*.class
+
+#idea files
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea/
+
+#build dirs
+out
+target
+CVS
+
+
+# Javascript Project
+frontend/dest
+frontend/node_modules
+frontend/node
+frontend/coverage
+frontend/npm-debug.log
+
+legacy/web/target-frontend
+
+assetstore/src/main/generated
+
+#Python scripts
+utils/python/base.py

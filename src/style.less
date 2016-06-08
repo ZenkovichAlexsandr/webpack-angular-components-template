@@ -1,0 +1,118 @@
+@import "~normalize";
+@import "~_clearfix";
+
+html {
+
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  transition: color linear 0.1s;
+  text-decoration: none;
+  color: #1d8fdb;
+  cursor: pointer;
+  &:hover {
+    color: #0067ab;
+  }
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  &__content {
+    padding: 50px;
+  }
+}
+
+label {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  display: block;
+}
+
+.submit-button {
+  background-color: #2b98c7;
+  background-image: none;
+  border-radius: 20px 20px 20px 20px;
+  color: #fff;
+  box-shadow: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 40px;
+}
+
+input[type="text"], select, textarea {
+  display: inline-block;
+  width: 220px;
+  padding: 4px 6px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.btn {
+  border-radius: 20px 20px 20px 20px;
+  display: inline;
+  font-weight: bold;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  width: 195px;
+  background-color: #2d99c5;
+  color: #fff;
+}
+
+.scroll-table-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.bordered-table th,
+.bordered-table td {
+  border: 1px solid #C1C1C1;
+  padding: 5px;
+}
+
+.scroll-table-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #DEDEDE;
+  th {
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.scroll-table {
+  max-height: 170px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #C1C1C1;
+}
